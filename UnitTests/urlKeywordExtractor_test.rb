@@ -10,7 +10,7 @@ class UrlKeywordExtractorTests < Test::Unit::TestCase
   DIFFICULT_TEST_URL = 'https://www.google.com/search?q=whatistheweatherlikeonmars&aqs=chrome.0.69i57j0l3j69i62l2.10643j0&sourceid=chrome&ie=UTF-8'
 
   #Expected Test Results
-  EXPECTED = {keywords:%w(what is the weather like on mars)}
+  EXPECTED = {queryKeywords:%w(search what is the weather like on mars),pathKeywords:%w(search)}
 
   attr_accessor :extractor
 
@@ -31,19 +31,24 @@ class UrlKeywordExtractorTests < Test::Unit::TestCase
     assert keywords.kind_of?(Hash)
   end
 
+  def test_correct_for_simple_test_path
+    result = @extractor.extract(SIMPLE_TEST_URL)
+    assert_equal(EXPECTED[:pathKeywords], result[:pathKeywords])
+  end
+
   def test_correct_for_simple_test
     result = @extractor.extract(SIMPLE_TEST_URL)
-    assert_equal(EXPECTED[:keywords], result[:keywords])
+    assert_equal(EXPECTED[:queryKeywords], result[:queryKeywords])
   end
 
   def test_correct_for_case_only_test
     result = @extractor.extract(CASE_ONLY_TEST_URL)
-    assert_equal(EXPECTED[:keywords], result[:keywords])
+    assert_equal(EXPECTED[:queryKeywords], result[:queryKeywords])
   end
 
   def test_correct_for_difficult_test
     result = @extractor.extract(DIFFICULT_TEST_URL)
-    assert_equal(EXPECTED[:keywords], result[:keywords])
+    assert_equal(EXPECTED[:queryKeywords], result[:queryKeywords])
   end
 
   def test_performant_for_simple_test

@@ -53,17 +53,17 @@ class UrlKeywordExtractorTests < Test::Unit::TestCase
 
   def test_performant_for_simple_test
     time = Benchmark.measure {@extractor.extract(SIMPLE_TEST_URL, %w(aqs sourceid ie))}
-    assert time.real < 0.01
+    assert time.real < 0.001
   end
 
   def test_performant_for_case_only_test
     time = Benchmark.measure {@extractor.extract(CASE_ONLY_TEST_URL, %w(aqs sourceid ie))}
-    assert time.real < 0.01
+    assert time.real < 0.001
   end
 
   def test_performant_for_difficult_test
     time = Benchmark.measure {@extractor.extract(DIFFICULT_TEST_URL, %w(aqs sourceid ie))}
-    assert time.real < 0.01
+    assert time.real < 0.005
   end
 
 

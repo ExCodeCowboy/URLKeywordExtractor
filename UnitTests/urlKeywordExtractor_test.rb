@@ -10,7 +10,7 @@ class UrlKeywordExtractorTests < Test::Unit::TestCase
   DIFFICULT_TEST_URL = 'https://www.google.com/search?q=whatistheweatherlikeonmars&aqs=chrome.0.69i57j0l3j69i62l2.10643j0&sourceid=chrome&ie=UTF-8'
 
   #Expected Test Results
-  EXPECTED = {queryKeywords:%w(what is the weather like on mars),pathKeywords:%w(search)}
+  EXPECTED = {queryKeywords: %w(what is the weather like on mars),pathKeywords:%w(search)}
 
   attr_accessor :extractor
 

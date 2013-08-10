@@ -4,6 +4,7 @@ GEM
     test-unit (2.5.5)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES

@@ -1,7 +1,14 @@
 require 'uri'
 require 'cgi'
+require_relative 'dictionary_splitter'
 
 class UrlKeywordExtractor
+
+  def initialize
+    @dictionary_splitter = DictionarySplitter.new
+  end
+
+
   def extract url, excluded_query_keys = []
 
       uri = URI(url)
@@ -33,7 +40,9 @@ class UrlKeywordExtractor
 
   def tokenize raw_string
     spaces = raw_string.split(' ')
-    matches = spaces.map(){|w| w.scan(/[[:upper:]]?[[:lower:]]+|[[:upper:]]+/)}
+    matches = spaces.map {|w| w.scan(/[[:upper:]]?[[:lower:]]+|[[:upper:]]+/)}
+              .flatten
+    matches = matches.map {|w| @dictionary_splitter.infer_spaces(w)}
               .flatten
     return matches
   end

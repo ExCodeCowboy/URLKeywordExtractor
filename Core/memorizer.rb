@@ -1,0 +1,3 @@
+class Memorizer
+  
+end

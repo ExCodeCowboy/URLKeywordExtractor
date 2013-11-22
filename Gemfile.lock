@@ -1,7 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    loggability (0.8.1)
+    sequel (3.48.0)
+    sqlite3 (1.3.8)
     test-unit (2.5.5)
+    wordnet (1.0.0)
+      loggability (~> 0.5)
+      sequel (~> 3.38)
+    wordnet-defaultdb (1.0.1)
+      sqlite3 (~> 1.3)
+      wordnet (~> 1.0.0.pre)
 
 PLATFORMS
   ruby
@@ -9,3 +18,5 @@ PLATFORMS
 
 DEPENDENCIES
   test-unit
+  wordnet
+  wordnet-defaultdb

@@ -8,7 +8,7 @@ class LogProcessorTests < Test::Unit::TestCase
   attr_accessor :logReader
 
   def setup
-    @log_reader = LogReader.new
+    @log_reader = LogReader.new [->(x){x[:ip_address] == nil},->(x){x[:url]==nil && x[:referrer]==nil}]
   end
 
   def teardown
@@ -33,6 +33,14 @@ class LogProcessorTests < Test::Unit::TestCase
       count+=1
     end
     assert_equal(3,count)
+  end
+
+  def test_ignores_bad_records
+    count = 0
+    @log_reader.read("../SampleData/parsed_data_tiny_with_useless.txt") do |record|
+      count+=1
+    end
+    assert_equal(1,count)
   end
 
   def test_parses_fields_correctly

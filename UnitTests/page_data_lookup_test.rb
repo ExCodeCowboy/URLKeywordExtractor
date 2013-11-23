@@ -5,7 +5,7 @@ require_relative '../Core/DataEnrichers/page_data_lookup'
 class PageDataLookup_test  < Test::Unit::TestCase
 
   def setup
-    @page_data_lookup = PageDataLookup.new
+    @page_data_lookup = PageDataLookup.new ->(x){x[:url]},->(x,y){x[:url_data]=y}
   end
 
   def teardown
@@ -23,8 +23,8 @@ class PageDataLookup_test  < Test::Unit::TestCase
     record[:url]='http://www.yahoo.com/'
 
     @page_data_lookup.enrich(record)
-    p record[:page_data]
-    assert_not_nil(record[:page_data][:title])
+    p record[:url_data]
+    assert_not_nil(record[:url_data][:title])
   end
 
   def test_lookup_returns_title_2
@@ -34,8 +34,8 @@ class PageDataLookup_test  < Test::Unit::TestCase
     record[:url]='http://rubylearning.com/satishtalim/ruby_exceptions.html'
 
     @page_data_lookup.enrich(record)
-    p record[:page_data]
-    assert_not_nil(record[:page_data][:title])
+    p record[:url_data]
+    assert_not_nil(record[:url_data][:title])
   end
 
 

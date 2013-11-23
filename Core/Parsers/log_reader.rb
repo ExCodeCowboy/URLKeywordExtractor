@@ -1,6 +1,8 @@
 class LogReader
 
-    def initialize
+
+  def initialize filter_actions = []
+      @filter_actions = filter_actions
       @current_record = {}
       @key_lookup = {"ip"=>:ip_address,"r"=>:referrer,"u"=>:url,"ua"=>:agent}
     end
@@ -8,7 +10,7 @@ class LogReader
    def read file_name
      IO.foreach(file_name) do |line|
        process_line line do |record|
-         yield record
+         yield record if !@filter_actions.any?{|filter|filter.call(record)}
        end
      end
    end

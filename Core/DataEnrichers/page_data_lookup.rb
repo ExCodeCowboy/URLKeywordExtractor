@@ -2,17 +2,22 @@ require 'open-uri'
 require 'uri'
 require 'digest/sha2'
 
-
-
 class PageDataLookup
+  def initialize urlLookupAction,outputAction
+    @lookupAction = urlLookupAction
+    @outputAction = outputAction
+  end
+
+
   def enrich record
-    url = record[:url]
+    url = @lookupAction.call(record)
     if url != nil
       urlid = get_page_id url
       page_data = lookupFromCache urlid, "processed"
       page_data ||= pull_fresh_page(urlid,url)
-      record[:page_data] = page_data
+      @outputAction.call(record,page_data)
     end
+    record
   end
 
   def pull_fresh_page(urlid, url)

@@ -27,12 +27,11 @@ class SimpleIDExtractor_test  < Test::Unit::TestCase
     assert_not_nil(record[:id])
   end
 
-  def test_id_extractor_creates_no_collisions
+  def test_id_extractor_creates_no_collisions_in_sample_data
     collision = false
     collision_check = {}
-    log_reader = LogReader.new
+    log_reader = LogReader.new [->(x){x[:ip_address]==nil}]
     log_reader.read("../SampleData/parsed_data.txt") do |record|
-      if record[:ip_address] != nil
         record[:agent] ||= "unknown"
         new_id = @id_extractor.get_identifier record
         if collision_check.has_key? new_id
@@ -48,7 +47,6 @@ class SimpleIDExtractor_test  < Test::Unit::TestCase
           collision_check[new_id]=record
         end
       end
-    end
   end
 
 end

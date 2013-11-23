@@ -1,18 +1,18 @@
 require 'uri'
 require 'cgi'
-require_relative 'dictionary_splitter'
+require_relative '../../Core/Parsers/dictionary_splitter'
 
 class UrlKeywordExtractor
 
   def initialize
     @dictionary_splitter = DictionarySplitter.new
+    @excluded_path_keywords = %w(www com net edu html htm)
   end
-
 
   def extract url, excluded_query_keys = []
 
-      uri = URI(url)
 
+      uri = URI(url)
       query_keywords = parse_query uri, excluded_query_keys
       path_keywords = parse_path uri
 
@@ -25,12 +25,17 @@ class UrlKeywordExtractor
                   .map {|k,v| [tokenize(v.join(' '))]}
                   .flatten
                   .map {|s| clean_keyword s}
+    #filter out probable hex vals
+    keywords = keywords.select{|w|!(/^[abcdef]{1,4}$/=~w)}
     return keywords
   end
 
   def parse_path uri
-    keywords = uri.path.split('/').select {|s| !s.empty?}
-                       .map {|s| clean_keyword s}
+    keywords = (uri.host + ' ' + uri.path).split('/').select {|s| !s.empty?}
+                .map {|w|tokenize w}
+                .flatten
+                .map {|s| clean_keyword s}
+                .select {|w|!@excluded_path_keywords.include?(w)}
     return keywords
   end
 
@@ -40,13 +45,11 @@ class UrlKeywordExtractor
 
   def tokenize raw_string
     spaces = raw_string.split(' ')
-    matches = spaces.map {|w| w.scan(/[[:upper:]]?[[:lower:]]+|[[:upper:]]+/)}
+    raw_matches = spaces.map {|w| w.scan(/[[:upper:]]?[[:lower:]]+|[[:upper:]]+/)}
               .flatten
-    matches = matches.map {|w| @dictionary_splitter.infer_spaces(w)}
+    matches = raw_matches.map {|w| @dictionary_splitter.infer_spaces(w)}
               .flatten
-    return matches
+    output_matches = (raw_matches.select{|w|w.length<10} + matches.select{|w|w.length>1}).uniq
+    return output_matches
   end
-
-
-
 end

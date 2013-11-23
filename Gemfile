@@ -6,3 +6,4 @@ gem "test-unit"
 
 gem 'wordnet'
 gem 'wordnet-defaultdb'
+gem 'treat'

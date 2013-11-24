@@ -4,7 +4,7 @@ require_relative '../../Core/DataAccess/file_access'
 class MemoryFlatFileHybrid
   include FileAccess
 
-  attr_accessor @record_location
+  attr_accessor :record_location
 
   def initialize
     @records = {}

@@ -6,17 +6,22 @@ class UrlKeywordExtractor
 
   def initialize urlLookupAction,outputAction
     @dictionary_splitter = DictionarySplitter.new
-    @excluded_path_keywords = %w(www com net edu html htm cgi bin index php frame iframe ashx)
+    @excluded_path_keywords = %w(www com net edu org html htm cgi bin index php frame iframe ashx)
     @lookupAction = urlLookupAction
     @outputAction = outputAction
   end
 
   def enrich record
     url = @lookupAction.call(record)
+
     if url
-      urlKeywords = extract(url)
+      begin
+        urlKeywords = extract(url)
+      rescue
+      end
       @outputAction.call(record,urlKeywords)
     end
+
     record
   end
 
@@ -56,7 +61,7 @@ class UrlKeywordExtractor
   def tokenize raw_string
     spaces = raw_string.split(' ')
     raw_matches = spaces.map {|w| w.scan(/[[:upper:]0-9]?[[:lower:]0-9]+|[[:upper:]0-9]+/)}
-              .flatten.select{|w|!(/[0-9][A-Za-z]/=~w)}
+              .flatten.select{|w|!(/[0-9][A-Za-z]*/=~w)} #trying to strip some of the Base 64 noise out
     matches = raw_matches.map {|w| @dictionary_splitter.infer_spaces(w)}
               .flatten
     output_matches = (raw_matches.select{|w|w.length<10} + matches.select{|w|w.length>1}).uniq

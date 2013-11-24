@@ -18,7 +18,7 @@ class ImportProcessWip < Test::Unit::TestCase
   end
 
   def test_tiny_data_processes
-    @import_process.process_file '../SampleData/parsed_data_tiny.txt'
+    @import_process.process_file '../SampleData/parsed_data.txt'
   end
 
 

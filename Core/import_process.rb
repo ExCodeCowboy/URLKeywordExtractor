@@ -3,6 +3,8 @@ require_relative 'DataEnrichers/page_data_lookup'
 require_relative 'DataEnrichers/url_keyword_extractor'
 require_relative 'DataEnrichers/simple_id_extractor'
 require_relative 'DataEnrichers/url_cleaner'
+require_relative 'Parsers/keyword_stripper'
+require_relative 'DataAccess/memory_flat_file_hybrid'
 
 class ImportProcess
   def initialize
@@ -18,37 +20,45 @@ class ImportProcess
    @url_cleaner = UrlCleaner.new ->x{x[:url]},->(x,y){x[:url]=y}
    @referrer_cleaner = UrlCleaner.new ->x{x[:referrer]},->(x,y){x[:referrer]=y}
 
+   #Keyword Extraction
+   @keyword_stripper = KeywordStripper.new([#->x{x[:url_data]},
+                                            ->x{x[:url_uri_keywords]},
+                                            #->x{x[:referrer_data]},
+                                            ->x{x[:referrer_uri_keywords]}],
+                                            ->(x,y){x[:keywords]=y})
+
+   @data_access = MemoryFlatFileHybrid.new
+
+
   end
 
   def process_file filename
-    @log_reader.read("../SampleData/parsed_data.txt") do |record|
-      #clean input
+    @data_access.purge_old_data
+
+    @log_reader.read(filename) do |record|
+
+      #clean input - very crude
       record = @url_cleaner.clean record
       record = @referrer_cleaner.clean record
 
-      #Add Id
+      #Add has based Id
       record = @id_creator.add_identifier record
 
       #back fill page data
-      record = @url_lookup.enrich record
-      record = @referrer_lookup.enrich record
-
-
+      #record = @url_lookup.enrich record
+      #record = @referrer_lookup.enrich record
 
       #tockenize urls
       record = @url_keywords.enrich record
       record = @referrer_keywords.enrich record
 
-
-
-      #tockenize all strings
-
-      #stem all keywords
+      #Tokenize, stem and extract all unique keywords from parser records
+      record = @keyword_stripper.strip_keywords record
 
       #persist records
-      p record
+      @data_access.save_record record
     end
-
+    @data_access.snapshot_data
 
   end
 

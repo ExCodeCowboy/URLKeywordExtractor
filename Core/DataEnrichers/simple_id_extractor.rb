@@ -1,8 +1,10 @@
+require 'digest/sha2'
+
 class SimpleIDExtractor
   def get_identifier record
     ip = record[:ip_address]
     agent = record[:agent] || "unknown"
-    (ip+agent).hash
+    (Digest::SHA256.new << (ip+agent)).to_s.slice(0,10)
   end
 
   def add_identifier record

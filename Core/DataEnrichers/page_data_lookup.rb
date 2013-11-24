@@ -1,8 +1,10 @@
 require 'open-uri'
 require 'uri'
 require 'digest/sha2'
+require_relative '../../Core/DataAccess/file_access'
 
 class PageDataLookup
+  include FileAccess
   def initialize urlLookupAction,outputAction
     @lookupAction = urlLookupAction
     @outputAction = outputAction
@@ -13,7 +15,7 @@ class PageDataLookup
     url = @lookupAction.call(record)
     if url != nil && url !=''
       urlid = get_page_id url
-      page_data = lookupFromCache urlid, "processed"
+      page_data = lookupFromCache urlid
       page_data ||= pull_fresh_page(urlid,url)
 
       @outputAction.call(record,page_data)
@@ -47,7 +49,7 @@ class PageDataLookup
       page_data[:keywords] = ''
       page_data[:description] = ''
     end
-    saveToCache(urlid,"processed",page_data)
+    saveToCache(urlid,page_data)
     return page_data
   end
 
@@ -55,22 +57,16 @@ class PageDataLookup
     (Digest::SHA256.new << url).to_s.slice(0,10)
   end
 
-  def lookupFromCache(urlid,prefix)
-    file_name = 'cache/'+prefix+urlid+".cache"
-    file_name = File.join(File.expand_path(File.dirname(__FILE__)),file_name)
-    page_data = nil
-    if File.exist? file_name
-      page_data = File.open(file_name, "rb") {|f| Marshal.load(f)}
-    end
-    return page_data
+  def lookupFromCache(urlid)
+    load_from_file (filename_for urlid)
   end
 
-  def saveToCache(urlid,prefix,page_data)
-    file_name = 'cache/'+prefix+urlid+".cache"
-    file_name = File.join(File.expand_path(File.dirname(__FILE__)),file_name)
-    File.open(file_name, "wb") {|io| Marshal.dump(page_data, io)}
+  def saveToCache(urlid,page_data)
+    save_to_file (filename_for urlid),page_data
   end
 
-
+  def filename_for urlid
+    make_file_name __FILE__, 'cache/processed'+urlid+".cache"
+  end
 
 end

@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1670a7-63b5-4453-b2df-e274508c8e8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UnitTests/simpleUrlKeywordExtractor_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/DataEnrichers/url_cleaner.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/DataAccess/file_access.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/search_by_keyword.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/search_by_uid.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataEnrichers/cache/processed817340c3d0.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataEnrichers/cache/processedc31f6ca08f.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataEnrichers/cache/processeded91698b58.cache" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/URLKeywordExtractor.iml" afterPath="$PROJECT_DIR$/.idea/URLKeywordExtractor.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/import_process.rb" afterPath="$PROJECT_DIR$/Core/import_process.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" afterPath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" afterPath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" afterPath="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" afterPath="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" afterPath="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" afterPath="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" />
@@ -19,31 +23,36 @@
     </list>
     <ignored path="URLKeywordExtractor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385230709672" ignored="false" />
+    <file path="/Dummy.txt" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385276817631" ignored="false" />
     <file path="/urlKeywordExtractor_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385235824425" ignored="false" />
-    <file path="/Gemfile" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385253290562" ignored="false" />
+    <file path="/Gemfile" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385280580165" ignored="false" />
     <file path="/url_keyword_parser.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1375071993872" ignored="false" />
-    <file path="/url_keyword_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385249908497" ignored="false" />
+    <file path="/url_keyword_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385309525045" ignored="false" />
     <file path="/Ruby Console" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1375073160238" ignored="false" />
     <file path="/url_lexer.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1376028965595" ignored="false" />
-    <file path="/temp.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385181163374" ignored="false" />
+    <file path="/temp.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385271045290" ignored="false" />
     <file path="/dictionary_splitter.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1376099488622" ignored="false" />
     <file path="/logProcessor_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385189579393" ignored="false" />
     <file path="/log_reader.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385189660626" ignored="false" />
     <file path="/simple_id_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385245876168" ignored="false" />
     <file path="/simple_id_extractor_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385189846159" ignored="false" />
-    <file path="/page_data_lookup.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385246860350" ignored="false" />
+    <file path="/page_data_lookup.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385275299779" ignored="false" />
     <file path="/page_data_lookup_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385183454389" ignored="false" />
     <file path="/uselss_record_filter_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385181679399" ignored="false" />
     <file path="/useless_record_filter.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385184731502" ignored="false" />
-    <file path="/import_process.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385244785532" ignored="false" />
+    <file path="/import_process.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385278105164" ignored="false" />
     <file path="/import_process_wip.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385238903101" ignored="false" />
     <file path="/simple_url_keyword_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385242637903" ignored="false" />
     <file path="/simpleUrlKeywordExtractor_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385242826863" ignored="false" />
     <file path="/url_cleaner.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385251229920" ignored="false" />
     <file path="/keyword_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385251767253" ignored="false" />
-    <file path="/keyword_stripper.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385253562467" ignored="false" />
-    <file path="/keyword_stripper_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385254133243" ignored="false" />
+    <file path="/keyword_stripper.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385309212746" ignored="false" />
+    <file path="/keyword_stripper_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385282754482" ignored="false" />
+    <file path="/memory_flat_file_hybrid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385278149271" ignored="false" />
+    <file path="/file_file_access.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385272211061" ignored="false" />
+    <file path="/file_access.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385272190204" ignored="false" />
+    <file path="/search_by_keyword.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385308697397" ignored="false" />
+    <file path="/search_by_uid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385308384295" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +72,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="import_process.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
+      <file leaf-file-name="simple_id_extractor.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+            <state line="11" column="10" selection-start="285" selection-end="285" vertical-scroll-proportion="-6.3461537">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="url_keyword_extractor.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="url_keyword_extractor.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="5" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0">
+            <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.7430407">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_url_keyword_extractor.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_process.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="54" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_by_keyword.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/search_by_keyword.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_by_uid.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="11" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,25 +129,16 @@
       <file leaf-file-name="keyword_stripper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+            <state line="49" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dsl.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/core/dsl.rb">
+      <file leaf-file-name="keyword_stripper_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schiphol.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/schiphol-0.9.4/lib/schiphol.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+            <state line="42" column="24" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,43 +147,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keyword_stripper_test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb">
+      <file leaf-file-name="memory_flat_file_hybrid.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="45" selection-start="564" selection-end="564" vertical-scroll-proportion="0.71030045">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url_cleaner.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_cleaner.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="5" selection-start="48" selection-end="166" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_data_lookup.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="29" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urlKeywordExtractor_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UnitTests/urlKeywordExtractor_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="17" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
+            <state line="17" column="1" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,22 +180,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/UnitTests/logProcessor_test.rb" />
-        <option value="$PROJECT_DIR$/Core/Parsers/log_reader.rb" />
-        <option value="$PROJECT_DIR$/UnitTests/simple_id_extractor_test.rb" />
-        <option value="$PROJECT_DIR$/UnitTests/urlKeywordExtractor_test.rb" />
-        <option value="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
-        <option value="$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb" />
         <option value="$PROJECT_DIR$/UnitTests/simpleUrlKeywordExtractor_test.rb" />
-        <option value="$PROJECT_DIR$/Core/import_process.rb" />
-        <option value="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" />
-        <option value="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" />
-        <option value="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" />
         <option value="$PROJECT_DIR$/Core/Parsers/keyword_extractor.rb" />
         <option value="$PROJECT_DIR$/Core/DataEnrichers/url_cleaner.rb" />
+        <option value="$PROJECT_DIR$/Core/DataAccess/file_file_access.rb" />
+        <option value="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" />
+        <option value="$PROJECT_DIR$/Core/DataAccess/file_access.rb" />
+        <option value="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" />
+        <option value="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
+        <option value="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
+        <option value="$PROJECT_DIR$/Core/import_process.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
         <option value="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" />
+        <option value="$PROJECT_DIR$/Core/search_by_uid.rb" />
+        <option value="$PROJECT_DIR$/Core/search_by_keyword.rb" />
+        <option value="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
+        <option value="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" />
       </list>
     </option>
   </component>
@@ -307,6 +316,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URLKeywordExtractor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URLKeywordExtractor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -323,6 +350,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Core" />
       <recent name="$PROJECT_DIR$/UnitTests" />
       <recent name="$PROJECT_DIR$/Core/DataEnrichers" />
       <recent name="$PROJECT_DIR$/SampleData" />
@@ -333,37 +361,7 @@
       <recent name="D:\Documents\GitHub\URLKeywordExtractor\UnitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.KeywordStripper_test">
-    <configuration default="false" name="PageDataLookup_test" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="URLKeywordExtractor" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/UnitTests" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/UnitTests/page_data_lookup_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_other_keyword_lookup">
     <configuration default="false" name="All tests in: UnitTests" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="URLKeywordExtractor" />
@@ -476,6 +474,36 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="test_other_keyword_lookup" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="URLKeywordExtractor" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/UnitTests" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_other_keyword_lookup" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -574,19 +602,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.PageDataLookup_test" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: UnitTests" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.import_process_wip" />
-      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.KeywordStripper_test" />
+      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: UnitTests" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.import_process_wip" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
+      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.KeywordStripper_test" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_other_keyword_lookup" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.KeywordStripper_test" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_other_keyword_lookup" />
         <item index="1" class="java.lang.String" itemvalue="Ruby.import_process_wip" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.KeywordStripper_test" />
         <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: UnitTests" />
+        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
       </list>
     </recent_temporary>
   </component>
@@ -638,18 +666,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27878788" sideWeight="0.30129126" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20946915" sideWeight="0.62666667" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21520804" sideWeight="0.6278788" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34060606" sideWeight="0.58321375" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37333333" sideWeight="0.41678622" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3721212" sideWeight="0.41678622" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -729,83 +757,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UnitTests/logProcessor_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="459" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/simpleUrlKeywordExtractor_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="46" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="644" selection-end="644" vertical-scroll-proportion="0.26086956">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/uri/common.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="0" selection-start="5380" selection-end="5380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/import_process_wip.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_cleaner.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="48" selection-end="166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/schiphol-0.9.4/lib/schiphol.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/core/dsl.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
@@ -813,30 +764,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Parsers/log_reader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="48" selection-start="1462" selection-end="1506" vertical-scroll-proportion="0.59407216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataAccess/file_access.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/workers/lexicalizers/taggers/lingua.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="287" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/workers/lexicalizers/sensers/wordnet.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="51" selection-start="374" selection-end="382" vertical-scroll-proportion="0.28907922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTests/urlKeywordExtractor_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="17" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="564" selection-end="564" vertical-scroll-proportion="0.71030045">
+        <state line="42" column="24" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="54" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="11" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="10" selection-start="285" selection-end="285" vertical-scroll-proportion="-6.3461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/search_by_keyword.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.7430407">
           <folding />
         </state>
       </provider>

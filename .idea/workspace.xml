@@ -2,63 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1670a7-63b5-4453-b2df-e274508c8e8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/import.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/keyword.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/other_keyword.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/records.index" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/0_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/0_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/1_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/1_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/2_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/2_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/3_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/3_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/4_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/4_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/5_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/5_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/6_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/6_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/7_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/7_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/8_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/8_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/9_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/9_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_record.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/g_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/g_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/h_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/h_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/i_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/i_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/j_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/j_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/k_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/k_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/l_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/l_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/n_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/n_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/p_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/p_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/q_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/q_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/r_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/r_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/t_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/t_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/u_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/u_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/w_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/w_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/x_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/x_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/y_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/y_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/z_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/z_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/import_process.rb" afterPath="$PROJECT_DIR$/Core/import_process.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" afterPath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" afterPath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/m_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/m_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" afterPath="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/o_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/o_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/s_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/s_keyword.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/search_by_keyword.rb" afterPath="$PROJECT_DIR$/Core/search_by_keyword.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/search_by_uid.rb" afterPath="$PROJECT_DIR$/Core/search_by_uid.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/v_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/v_keyword.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="URLKeywordExtractor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385276817631" ignored="false" />
+    <file path="/Dummy.txt" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385333817745" ignored="false" />
     <file path="/urlKeywordExtractor_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385235824425" ignored="false" />
     <file path="/Gemfile" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385280580165" ignored="false" />
     <file path="/url_keyword_parser.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1375071993872" ignored="false" />
@@ -89,6 +38,7 @@
     <file path="/search_by_keyword.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385308697397" ignored="false" />
     <file path="/search_by_uid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385332692397" ignored="false" />
     <file path="/import.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385319706553" ignored="false" />
+    <file path="/README.txt" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385334134110" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,16 +61,7 @@
       <file leaf-file-name="simple_id_extractor.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="285" selection-end="285" vertical-scroll-proportion="-6.3461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url_keyword_extractor.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
+            <state line="11" column="10" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,10 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_by_uid.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search_by_uid.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="10" selection-start="279" selection-end="279" vertical-scroll-proportion="0.38543898">
+            <state line="17" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="100" selection-start="277" selection-end="277" vertical-scroll-proportion="0.09664948">
               <folding />
             </state>
           </provider>
@@ -216,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Core/DataEnrichers/url_cleaner.rb" />
         <option value="$PROJECT_DIR$/Core/DataAccess/file_file_access.rb" />
         <option value="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" />
         <option value="$PROJECT_DIR$/Core/DataAccess/file_access.rb" />
@@ -232,6 +181,7 @@
         <option value="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
         <option value="$PROJECT_DIR$/Core/search_by_keyword.rb" />
         <option value="$PROJECT_DIR$/Core/search_by_uid.rb" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -265,7 +215,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,109 +247,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestIndex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parsers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataEnrichers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URLKeywordExtractor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataAccess" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor" />
     <property name="last_opened_file_path" value="$USER_HOME$/.rvm/rubies/ruby-2.0.0-p247/bin/ruby" />
     <property name="FullScreen" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -724,18 +588,18 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27878788" sideWeight="0.30129126" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21520804" sideWeight="0.6278788" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21807748" sideWeight="0.6278788" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34060606" sideWeight="0.58321375" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3721212" sideWeight="0.41678622" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37176472" sideWeight="0.41678622" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -811,25 +675,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Core/DataAccess/file_access.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/workers/lexicalizers/taggers/lingua.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="287" selection-end="296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="26" selection-start="287" selection-end="296" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/workers/lexicalizers/sensers/wordnet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="374" selection-end="382" vertical-scroll-proportion="0.28907922">
-          <folding />
-        </state>
+        <state line="9" column="51" selection-start="374" selection-end="382" vertical-scroll-proportion="0.28907922" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -862,7 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="285" selection-end="285" vertical-scroll-proportion="-6.3461537">
+        <state line="11" column="10" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -918,7 +771,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="279" selection-end="279" vertical-scroll-proportion="0.38543898">
+        <state line="17" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="100" selection-start="277" selection-end="277" vertical-scroll-proportion="0.09664948">
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 class SimpleIDExtractor
   def get_identifier record
     ip = record[:ip_address]
-    agent = record[:agent]
+    agent = record[:agent] || "unknown"
     (ip+agent).hash
   end
 

@@ -11,10 +11,11 @@ class PageDataLookup
 
   def enrich record
     url = @lookupAction.call(record)
-    if url != nil
+    if url != nil && url !=''
       urlid = get_page_id url
       page_data = lookupFromCache urlid, "processed"
       page_data ||= pull_fresh_page(urlid,url)
+
       @outputAction.call(record,page_data)
     end
     record

@@ -6,6 +6,7 @@ GEM
     mime-types (1.25)
     progressbar (0.21.0)
     rubyzip (1.1.0)
+    rubyzip2 (2.0.2)
     schiphol (0.9.4)
       progressbar (>= 0.10.0)
       rubyzip (>= 0.9.6.1)
@@ -16,6 +17,7 @@ GEM
       birch
       schiphol
       yomu
+    uea-stemmer (0.10.1)
     wordnet (1.0.0)
       loggability (~> 0.5)
       sequel (~> 3.38)
@@ -30,7 +32,9 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  rubyzip2
   test-unit
   treat
+  uea-stemmer
   wordnet
   wordnet-defaultdb

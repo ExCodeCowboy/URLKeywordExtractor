@@ -5,7 +5,6 @@ require_relative '../Core/DataAccess/memory_flat_file_hybrid'
 
 include Treat::Core::DSL
 keyword = ARGF.read.gsub "\n",''
-puts keyword
 
 keywordCollection = []
 keyword_stripper = KeywordStripper.new([->x{x},->x{keyword_stripper.get_additional_keywords(x)}],->(x,y){keywordCollection=y})

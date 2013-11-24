@@ -2,23 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1670a7-63b5-4453-b2df-e274508c8e8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/DataAccess/file_access.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/search_by_keyword.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/search_by_uid.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataEnrichers/cache/processed817340c3d0.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataEnrichers/cache/processedc31f6ca08f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataEnrichers/cache/processeded91698b58.cache" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/URLKeywordExtractor.iml" afterPath="$PROJECT_DIR$/.idea/URLKeywordExtractor.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Core/import.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/keyword.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/other_keyword.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/records.index" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/0_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/0_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/1_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/1_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/2_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/2_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/3_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/3_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/4_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/4_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/5_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/5_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/6_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/6_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/7_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/7_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/8_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/8_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/9_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/9_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/a_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/b_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/d_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/e_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_record.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/f_record.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/g_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/g_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/h_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/h_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/i_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/i_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/j_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/j_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/k_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/k_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/l_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/l_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/n_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/n_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/p_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/p_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/q_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/q_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/r_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/r_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/t_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/t_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/u_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/u_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/w_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/w_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/x_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/x_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/y_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/y_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/z_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/z_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/c_keyword.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/import_process.rb" afterPath="$PROJECT_DIR$/Core/import_process.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" afterPath="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" afterPath="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" afterPath="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" afterPath="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" afterPath="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" afterPath="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/m_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/m_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" afterPath="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/o_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/o_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/s_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/s_keyword.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/search_by_keyword.rb" afterPath="$PROJECT_DIR$/Core/search_by_keyword.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/search_by_uid.rb" afterPath="$PROJECT_DIR$/Core/search_by_uid.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/v_keyword.index" afterPath="$PROJECT_DIR$/Core/DataAccess/FlatFiles/v_keyword.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="URLKeywordExtractor.iws" />
@@ -40,19 +75,20 @@
     <file path="/page_data_lookup_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385183454389" ignored="false" />
     <file path="/uselss_record_filter_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385181679399" ignored="false" />
     <file path="/useless_record_filter.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385184731502" ignored="false" />
-    <file path="/import_process.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385278105164" ignored="false" />
-    <file path="/import_process_wip.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385238903101" ignored="false" />
+    <file path="/import_process.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385319453335" ignored="false" />
+    <file path="/import_process_wip.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385317955247" ignored="false" />
     <file path="/simple_url_keyword_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385242637903" ignored="false" />
     <file path="/simpleUrlKeywordExtractor_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385242826863" ignored="false" />
     <file path="/url_cleaner.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385251229920" ignored="false" />
     <file path="/keyword_extractor.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385251767253" ignored="false" />
-    <file path="/keyword_stripper.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385309212746" ignored="false" />
+    <file path="/keyword_stripper.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385332596537" ignored="false" />
     <file path="/keyword_stripper_test.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385282754482" ignored="false" />
-    <file path="/memory_flat_file_hybrid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385278149271" ignored="false" />
+    <file path="/memory_flat_file_hybrid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385317753422" ignored="false" />
     <file path="/file_file_access.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385272211061" ignored="false" />
     <file path="/file_access.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385272190204" ignored="false" />
     <file path="/search_by_keyword.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385308697397" ignored="false" />
-    <file path="/search_by_uid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385308384295" ignored="false" />
+    <file path="/search_by_uid.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385332692397" ignored="false" />
+    <file path="/import.rb" changelist="9c1670a7-63b5-4453-b2df-e274508c8e8c" time="1385319706553" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,19 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="url_keyword_extractor.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="url_keyword_extractor.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.7430407">
+            <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple_url_keyword_extractor.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb">
+      <file leaf-file-name="import_process_wip.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UnitTests/import_process_wip.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="23" column="5" selection-start="496" selection-end="547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,7 +138,34 @@
       <file leaf-file-name="import_process.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="54" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
+            <state line="82" column="3" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_by_uid.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="10" selection-start="279" selection-end="279" vertical-scroll-proportion="0.38543898">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/import.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dictionary_splitter.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Parsers/dictionary_splitter.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="16" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,16 +174,7 @@
       <file leaf-file-name="search_by_keyword.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/search_by_keyword.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_by_uid.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="11" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,25 +183,7 @@
       <file leaf-file-name="keyword_stripper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="keyword_stripper_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+            <state line="43" column="5" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,7 +192,7 @@
       <file leaf-file-name="memory_flat_file_hybrid.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="1" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+            <state line="42" column="4" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,22 +216,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/UnitTests/simpleUrlKeywordExtractor_test.rb" />
-        <option value="$PROJECT_DIR$/Core/Parsers/keyword_extractor.rb" />
         <option value="$PROJECT_DIR$/Core/DataEnrichers/url_cleaner.rb" />
         <option value="$PROJECT_DIR$/Core/DataAccess/file_file_access.rb" />
         <option value="$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb" />
         <option value="$PROJECT_DIR$/Core/DataAccess/file_access.rb" />
         <option value="$PROJECT_DIR$/Core/DataEnrichers/simple_id_extractor.rb" />
-        <option value="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
-        <option value="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
-        <option value="$PROJECT_DIR$/Core/import_process.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/UnitTests/keyword_stripper_test.rb" />
-        <option value="$PROJECT_DIR$/Core/search_by_uid.rb" />
-        <option value="$PROJECT_DIR$/Core/search_by_keyword.rb" />
-        <option value="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
         <option value="$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb" />
+        <option value="$PROJECT_DIR$/UnitTests/import_process_wip.rb" />
+        <option value="$PROJECT_DIR$/Core/import.rb" />
+        <option value="$PROJECT_DIR$/Core/Parsers/dictionary_splitter.rb" />
+        <option value="$PROJECT_DIR$/Core/import_process.rb" />
+        <option value="$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb" />
+        <option value="$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb" />
+        <option value="$PROJECT_DIR$/Core/search_by_keyword.rb" />
+        <option value="$PROJECT_DIR$/Core/search_by_uid.rb" />
       </list>
     </option>
   </component>
@@ -263,6 +299,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="UnitTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URLKeywordExtractor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URLKeywordExtractor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestIndex" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,7 +415,7 @@
       <recent name="D:\Documents\GitHub\URLKeywordExtractor\UnitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_other_keyword_lookup">
+  <component name="RunManager" selected="Ruby.import_process_wip">
     <configuration default="false" name="All tests in: UnitTests" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="URLKeywordExtractor" />
@@ -610,8 +664,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_other_keyword_lookup" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.import_process_wip" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.import_process_wip" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_other_keyword_lookup" />
         <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.KeywordStripper_test" />
         <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
         <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.UrlKeywordExtractorTests" />
@@ -757,27 +811,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/treat-2.0.7/lib/treat/core/dsl.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Parsers/log_reader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/page_data_lookup.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="48" selection-start="1462" selection-end="1506" vertical-scroll-proportion="0.59407216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core/DataAccess/file_access.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
@@ -813,23 +846,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb">
+    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
+    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="54" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+        <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -841,30 +867,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/simple_url_keyword_extractor.rb">
+    <entry file="file://$PROJECT_DIR$/UnitTests/import_process_wip.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="23" column="5" selection-start="496" selection-end="547" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/search_by_keyword.rb">
+    <entry file="file://$PROJECT_DIR$/Core/import.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Parsers/dictionary_splitter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/import_process.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="3" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/DataAccess/memory_flat_file_hybrid.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="4" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/Parsers/keyword_stripper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+        <state line="43" column="5" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/DataEnrichers/url_keyword_extractor.rb">
+    <entry file="file://$PROJECT_DIR$/Core/search_by_keyword.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="25" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.7430407">
+        <state line="7" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/search_by_uid.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="279" selection-end="279" vertical-scroll-proportion="0.38543898">
           <folding />
         </state>
       </provider>

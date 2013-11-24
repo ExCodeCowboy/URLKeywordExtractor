@@ -1,6 +1,7 @@
 require 'test/unit'
 require 'benchmark'
 require_relative '../Core/import_process'
+require_relative '../Core/DataAccess/memory_flat_file_hybrid'
 
 
 class ImportProcessWip < Test::Unit::TestCase
@@ -18,6 +19,7 @@ class ImportProcessWip < Test::Unit::TestCase
   end
 
   def test_tiny_data_processes
+    #@import_process.data_access.record_location = '../../UnitTests/TestIndex/'
     @import_process.process_file '../SampleData/parsed_data.txt'
   end
 

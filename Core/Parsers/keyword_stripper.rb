@@ -39,9 +39,9 @@ class KeywordStripper
     hypernyms = keyword.hypernyms
     synonyms = keyword.synonyms
 
-    p "Hyponyms(not used): " + hyponyms.join(",")
-    p "Hypernyms(not used): " + hypernyms.join(",")
-    p "Synonyms(phrases not used: " + synonyms.join(",")
+    #p "Hyponyms(not used): " + hyponyms.join(",")
+    #p "Hypernyms(not used): " + hypernyms.join(",")
+    #p "Synonyms(phrases not used: " + synonyms.join(",")
 
     return synonyms.select {|x|!(/ /=~ x)} #strip multi-word
   end

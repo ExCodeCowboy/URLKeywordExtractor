@@ -7,6 +7,9 @@ require_relative 'Parsers/keyword_stripper'
 require_relative 'DataAccess/memory_flat_file_hybrid'
 
 class ImportProcess
+
+  attr_accessor @data_access
+
   def initialize
    #Log Reader
    @log_reader = LogReader.new [->(x){x[:ip_address] == nil},->(x){x[:url]==nil && x[:referrer]==nil}]

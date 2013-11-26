@@ -45,9 +45,8 @@ class ImportProcess
       p count
       t = Thread.new { process_record record, mutex}
       threads.push(t)
-      if threads.length > 10
-        t = threads.shift
-        t.join
+      while threads.length > 10
+        threads.select! {|t|t.alive?}
       end
     end
     threads.each {|wt|wt.join()}

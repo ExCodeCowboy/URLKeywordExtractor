@@ -18,10 +18,15 @@ class ImportProcessWip < Test::Unit::TestCase
     assert_not_nil @import_process
   end
 
-  def test_tiny_data_processes
+  #def test_tiny_data_processes
     #@import_process.data_access.record_location = '../../UnitTests/TestIndex/'
-    @import_process.process_file '../SampleData/parsed_data.txt'
-  end
+    #@import_process.process_file '../SampleData/parsed_data.txt'
+  #end
 
+
+  def test_tiny_data_processes
+    @import_process.data_access.record_location = '../../UnitTests/TestIndex/'
+    @import_process.process_file '../SampleData/parsed_data_tiny.txt'
+  end
 
 end

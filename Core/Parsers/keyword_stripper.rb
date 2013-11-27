@@ -2,8 +2,6 @@ require 'treat'
 include Treat::Core::DSL
 class KeywordStripper
 
-
-
   def initialize objectLookupActions,outputAction
     @lookupActions = objectLookupActions
     @outputAction = outputAction

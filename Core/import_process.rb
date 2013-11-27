@@ -24,11 +24,11 @@ class ImportProcess
    @referrer_cleaner = UrlCleaner.new ->x{x[:referrer]},->(x,y){x[:referrer]=y}
 
    #Keyword Extraction
-   @keyword_stripper = KeywordStripper.new([#->x{x[:url_data]},
+   @keyword_stripper = ->{KeywordStripper.new([#->x{x[:url_data]},
                                             ->x{x[:url_uri_keywords]},
                                             #->x{x[:referrer_data]},
                                             ->x{x[:referrer_uri_keywords]}],
-                                            ->(x,y){x[:keywords]=y})
+                                            ->(x,y){x[:keywords]=y})}
 
    @data_access = MemoryFlatFileHybrid.new
 
@@ -45,7 +45,7 @@ class ImportProcess
       p count
       t = Thread.new { process_record record, mutex}
       threads.push(t)
-      while threads.length > 10
+      while threads.length > 20
         threads.select! {|t|t.alive?}
       end
     end
@@ -71,8 +71,10 @@ class ImportProcess
     record = @referrer_keywords.enrich record
 
     #Tokenize, stem and extract all unique keywords from parser records
+    stripper =
+    record = @keyword_stripper.call().strip_keywords(record)
+
     mutex.synchronize do
-      record = @keyword_stripper.strip_keywords record
       #persist records
       @data_access.save_record record
     end
